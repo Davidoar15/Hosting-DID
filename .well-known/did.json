@@ -1,1 +1,31 @@
-
+{
+    "@context": [
+      "https://www.w3.org/ns/did/v1",
+      {
+        "Ed25519VerificationKey2018": "https://w3id.org/security#Ed25519VerificationKey2018",
+        "publicKeyJwk": {
+          "@id": "https://w3id.org/security#publicKeyJwk",
+          "@type": "@json"
+        }
+      }
+    ],
+    "id": "did:web:davidoar15.github.io/Hosting-DID/.well-known/did.json",
+    "verificationMethod": [
+      {
+        "id": "did:web:davidoar15.github.io/Hosting-DID/.well-known/did.json#owner",
+        "type": "Ed25519VerificationKey2018",
+        "controller": "did:web:davidoar15.github.io/Hosting-DID/.well-known/did.json",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "crv": "Ed25519",
+          "x": "i0useLstCjBAejs5emPSamnClhKdMG9LAWtzOPkOSWY"
+        }
+      }
+    ],
+    "authentication": [
+      "did:web:davidoar15.github.io/Hosting-DID/.well-known/did.json#owner"
+    ],
+    "assertionMethod": [
+      "did:web:davidoar15.github.io/Hosting-DID/.well-known/did.json#owner"
+    ]
+}
